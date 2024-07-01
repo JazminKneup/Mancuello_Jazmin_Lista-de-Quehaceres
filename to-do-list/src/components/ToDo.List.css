@@ -1,0 +1,101 @@
+.task-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .task-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-actions button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .task-actions button:hover {
+    background-color: darkred;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  button.add-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+  }
+  
+  button.add-button:hover {
+    background-color: darkblue;
+  }
+  
+  /* Custom styles for checkbox */
+  .task-actions input[type="checkbox"] {
+    display: none;
+  }
+  
+  .task-actions input[type="checkbox"] + label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border: 2px solid #000;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .task-actions input[type="checkbox"]:checked + label {
+    background-color: #98d35c;
+    border-color: #121212;
+  }
+  
+  .task-actions input[type="checkbox"]:checked + label::after {
+    content: '✔';
+    color: #0d0d0d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button.delete-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button.delete-button:hover {
+    background-color: #333;
+  }
+  
